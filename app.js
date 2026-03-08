@@ -1,211 +1,179 @@
 const quotes = [
+  // ── Historical Writers & Feminists ──
   {
-    text: "I have learned over the years that when one's mind is made up, this diminishes fear.",
-    author: "Rosa Parks",
-    role: "Civil Rights Icon",
-    emoji: "🌹",
-    vibe: "fearless",
-    vibeClass: "v1"
-  },
-  {
-    text: "The question isn't who's going to let me; it's who is going to stop me.",
-    author: "Ayn Rand",
-    role: "Writer & Philosopher",
-    emoji: "⚡",
-    vibe: "unstoppable",
-    vibeClass: "v2"
-  },
-  {
-    text: "I raise up my voice — not so that I can shout, but so that those without a voice can be heard.",
-    author: "Malala Yousafzai",
-    role: "Youngest Nobel Laureate",
-    emoji: "📣",
-    vibe: "amplify others",
-    vibeClass: "v4"
-  },
-  {
-    text: "Well-behaved women seldom make history.",
-    author: "Laurel Thatcher Ulrich",
-    role: "Historian",
-    emoji: "🔥",
-    vibe: "rebel energy",
-    vibeClass: "v1"
-  },
-  {
-    text: "I am no bird; and no net ensnares me: I am a free human being with an independent will.",
-    author: "Charlotte Brontë",
-    role: "Novelist",
-    emoji: "🕊️",
-    vibe: "free spirit",
-    vibeClass: "v2"
-  },
-  {
-    text: "There is no limit to what we, as women, can accomplish.",
-    author: "Michelle Obama",
-    role: "Former First Lady",
-    emoji: "🚀",
-    vibe: "no ceiling",
-    vibeClass: "v3"
-  },
-  {
-    text: "Think like a queen. A queen is not afraid to fail. Failure is another stepping stone to greatness.",
-    author: "Oprah Winfrey",
-    role: "Media Mogul",
-    emoji: "👑",
-    vibe: "queen mindset",
-    vibeClass: "v3"
-  },
-  {
-    text: "You can waste your lives drawing lines. Or you can live your life crossing them.",
-    author: "Shonda Rhimes",
-    role: "TV Genius",
-    emoji: "✨",
-    vibe: "line crosser",
-    vibeClass: "v2"
-  },
-  {
-    text: "A woman with a voice is, by definition, a strong woman.",
-    author: "Melinda Gates",
-    role: "Philanthropist",
-    emoji: "🎤",
-    vibe: "speak up",
-    vibeClass: "v4"
-  },
-  {
-    text: "I have stood on a mountain of no's for one yes.",
-    author: "B. Smith",
-    role: "Entrepreneur & Icon",
-    emoji: "🏔️",
-    vibe: "persistence",
-    vibeClass: "v1"
-  },
-  {
-    text: "Life shrinks or expands in proportion to one's courage.",
-    author: "Anaïs Nin",
-    role: "Writer",
-    emoji: "🦋",
-    vibe: "expand yourself",
-    vibeClass: "v2"
-  },
-  {
-    text: "One child, one teacher, one book, one pen can change the world.",
-    author: "Malala Yousafzai",
-    role: "Education Activist",
-    emoji: "📖",
-    vibe: "change maker",
-    vibeClass: "v4"
-  },
-  {
-    text: "I am not free while any woman is unfree, even when her shackles are very different from my own.",
-    author: "Audre Lorde",
-    role: "Writer & Activist",
-    emoji: "🤝",
-    vibe: "solidarity",
-    vibeClass: "v4"
-  },
-  {
-    text: "The most common way people give up their power is by thinking they don't have any.",
-    author: "Alice Walker",
-    role: "Novelist & Poet",
-    emoji: "💪",
-    vibe: "own your power",
-    vibeClass: "v1"
-  },
-  {
-    text: "You don't make progress by standing on the sidelines whimpering and complaining. You make progress by implementing ideas.",
-    author: "Shirley Chisholm",
-    role: "First Black Congresswoman",
-    emoji: "🏃‍♀️",
-    vibe: "just do it",
-    vibeClass: "v3"
-  },
-  {
-    text: "I never dreamed about success. I worked for it.",
-    author: "Estée Lauder",
-    role: "Business Legend",
-    emoji: "💼",
-    vibe: "grindset",
-    vibeClass: "v3"
-  },
-  {
-    text: "Women belong in all places where decisions are being made.",
-    author: "Ruth Bader Ginsburg",
-    role: "Supreme Court Justice",
-    emoji: "⚖️",
-    vibe: "take your seat",
-    vibeClass: "v1"
-  },
-  {
-    text: "I'm tough, I'm ambitious, and I know exactly what I want. If that makes me a bitch, okay.",
-    author: "Madonna",
-    role: "Queen of Pop",
-    emoji: "💅",
-    vibe: "unapologetic",
-    vibeClass: "v1"
-  },
-  {
-    text: "Kiekviena moteris turi savyje jėgą, kurios net pati nežino. Every woman carries a strength she doesn't even know.",
-    author: "Žemaitė",
-    role: "Lithuanian Writer & Feminist Pioneer",
+    text: "Nieko į grabą neįsidėsi. — You cannot take anything into the grave. Live fully, give generously.",
+    author: "Žemaitė (Julija Beniuševičiūtė-Žymantienė)",
+    role: "Writer, Feminist & National Revival Pioneer",
     emoji: "✊",
     vibe: "inner strength",
     vibeClass: "v1"
   },
   {
-    text: "The sky doesn't ask permission — neither do I.",
-    author: "Nijolė Sadūnaitė",
-    role: "Soviet Dissident & Human Rights Activist",
-    emoji: "✈️",
-    vibe: "no limits",
+    text: "When people have so much to express, no single language can contain it all.",
+    author: "Sofija Kymantaitė-Čiurlionienė",
+    role: "Writer, Educator & Cultural Activist",
+    emoji: "🎨",
+    vibe: "creative fire",
     vibeClass: "v2"
   },
   {
-    text: "Books are the wings of the nation. I carried them so Lithuania could fly.",
-    author: "Felicija Bortkevičienė",
-    role: "Book Smuggler, Publisher & Activist",
+    text: "People are lonely like trees. Trees touch each other with leaves and branches, but the trunks always stand apart.",
+    author: "Jurga Ivanauskaitė",
+    role: "Writer, Painter & Tibet Activist",
+    emoji: "🌳",
+    vibe: "deep soul",
+    vibeClass: "v4"
+  },
+  {
+    text: "My life is a windstorm, unleashed and unbounded — it sweeps like a falcon over expanses of field!",
+    author: "Salomėja Nėris (Salomėja Bačinskaitė)",
+    role: "Beloved Lithuanian Poetess",
+    emoji: "🌪️",
+    vibe: "unleashed",
+    vibeClass: "v2"
+  },
+  // ── Independence & Freedom Fighters ──
+  {
+    text: "The love of the Motherland led me. From childhood I lived with the idea that I would one day go to war for her freedom.",
+    author: "Emilija Pliaterytė",
+    role: "\"Lithuanian Joan of Arc\" — 1831 Uprising Heroine",
+    emoji: "⚔️",
+    vibe: "fearless",
+    vibeClass: "v1"
+  },
+  {
+    text: "You are the chief editors! You commit the crimes — we just write them down. We are merely the secretaries.",
+    author: "Nijolė Sadūnaitė",
+    role: "Dissident Nun & Human Rights Defender",
+    emoji: "✝️",
+    vibe: "truth teller",
+    vibeClass: "v1"
+  },
+  {
+    text: "The happiest years of my life were spent in prison. You feel God's presence there. For the Church to live, you need martyrs.",
+    author: "Nijolė Sadūnaitė",
+    role: "Soviet Political Prisoner & Chronicle of the Catholic Church Smuggler",
+    emoji: "🕊️",
+    vibe: "unbreakable spirit",
+    vibeClass: "v4"
+  },
+  {
+    text: "Death, famine, typhus, lice, scurvy, and cold had wormed their way into our barracks — but they could not reach our spirit.",
+    author: "Dalia Grinkevičiūtė",
+    role: "Writer, Physician & Siberian Exile Survivor",
+    emoji: "❄️",
+    vibe: "unbreakable",
+    vibeClass: "v1"
+  },
+  // ── Activists & Suffragists ──
+  {
+    text: "Voting rights must belong to all — regardless of sex, religion, or nationality. This is not a privilege, it is a right.",
+    author: "Felicija Bortkevičienė (née Povickaitė)",
+    role: "Publisher, Book Smuggler, Suffragist & First Lithuanian Female Freemason",
     emoji: "📚",
     vibe: "knowledge rebel",
     vibeClass: "v4"
   },
   {
-    text: "If they won't give us freedom, we'll sing it into existence.",
-    author: "Kazimiera Prunskienė",
-    role: "First Female Prime Minister of Lithuania",
-    emoji: "🎶",
-    vibe: "sing for freedom",
+    text: "A conscious person sees how small we each are in this world — a mere atom of its grandeur — yet that awareness is our greatest power.",
+    author: "Gabrielė Petkevičaitė-Bitė",
+    role: "Writer, Educator & Women's Rights Pioneer",
+    emoji: "🐝",
+    vibe: "bee power",
+    vibeClass: "v2"
+  },
+  {
+    text: "All my deeds were committed out of love for culture and because I could not coldly observe the suffering of the innocent.",
+    author: "Ona Šimaitė",
+    role: "Librarian, Righteous Among the Nations — Rescued Jews from Vilna Ghetto",
+    emoji: "📖",
+    vibe: "quiet courage",
     vibeClass: "v4"
   },
   {
-    text: "Science doesn't care about your gender. Results speak.",
-    author: "Birutė Galdikas",
-    role: "Lithuanian-Canadian Primatologist",
+    text: "Every day of your life you must devote yourself to the good of others — by doing, not chatting.",
+    author: "Ona Šimaitė",
+    role: "Vilnius University Librarian & Holocaust Rescuer",
+    emoji: "🤝",
+    vibe: "actions speak",
+    vibeClass: "v3"
+  },
+  // ── Politicians ──
+  {
+    text: "Do not be afraid to be yourself, to have your dream, your vision, and to go for it. We can achieve so much if we are sincerely committed.",
+    author: "Dalia Grybauskaitė",
+    role: "First Female President of Lithuania (2009–2019)",
+    emoji: "🇱🇹",
+    vibe: "iron lady",
+    vibeClass: "v1"
+  },
+  {
+    text: "Concrete examples of successful women are the best means of empowerment for others to seek the heights.",
+    author: "Dalia Grybauskaitė",
+    role: "Lithuania's \"Iron Lady\" & Charlemagne Prize Laureate",
+    emoji: "⚡",
+    vibe: "lead by example",
+    vibeClass: "v3"
+  },
+  {
+    text: "We're living a paradox. While our societies are equally balanced, our parliaments are not. It is time to change that.",
+    author: "Ingrida Šimonytė",
+    role: "Prime Minister of Lithuania (2020–2024)",
+    emoji: "⚖️",
+    vibe: "equality now",
+    vibeClass: "v2"
+  },
+  {
+    text: "When a small nation stands up for its freedom, it shows the world that courage has no size.",
+    author: "Kazimira Prunskienė",
+    role: "First Prime Minister of Independent Lithuania (1990–1991)",
+    emoji: "🎶",
+    vibe: "freedom voice",
+    vibeClass: "v4"
+  },
+  // ── Scientists & Scholars ──
+  {
+    text: "We must refocus our collective memory. The path of so-called 'progress' is extinguishing the very conditions for life on Earth.",
+    author: "Marija Gimbutienė (Marija Gimbutas)",
+    role: "Archaeologist — Discovered \"Old Europe\" & the Goddess Civilisation",
+    emoji: "🏺",
+    vibe: "ancient wisdom",
+    vibeClass: "v2"
+  },
+  {
+    text: "When I came to the rainforest, nobody could pronounce my name. But the orangutans didn't care — and neither did I.",
+    author: "Birutė Galdikas (Galdikaitė)",
+    role: "Lithuanian-Canadian Primatologist — One of Leakey's \"Trimates\"",
     emoji: "🦧",
     vibe: "science queen",
     vibeClass: "v3"
   },
+  // ── Athletes ──
   {
-    text: "I didn't come to participate. I came to win.",
+    text: "Psychology plays the biggest role. I learned so much during my break — when I came back, I could approach everything in a completely different way.",
     author: "Rūta Meilutytė",
-    role: "Olympic Gold Swimmer 🇱🇹",
+    role: "Olympic Gold Medallist & 3× World Champion Swimmer",
     emoji: "🥇",
     vibe: "champion mindset",
     vibeClass: "v3"
   },
+  // ── Artists & Cultural Figures ──
   {
-    text: "A nation's soul lives in its songs, and it was women who kept singing.",
-    author: "Dalia Grinkevičiūtė",
-    role: "Writer & Siberian Exile Survivor",
-    emoji: "❄️",
-    vibe: "unbreakable",
-    vibeClass: "v1"
-  },
-  {
-    text: "Lead not from above, but from within. That's how real change happens.",
-    author: "Dalia Grybauskaitė",
-    role: "First Female President of Lithuania",
-    emoji: "🇱🇹",
-    vibe: "lead from within",
+    text: "When I came to Germany, I had zero stage experience, zero repertoire. I learned everything from scratch — and I grow with every role, to this day.",
+    author: "Violeta Urmana (Urmanavičiūtė)",
+    role: "World-Renowned Opera Singer & UNESCO Artist for Peace",
+    emoji: "🎭",
+    vibe: "never stop growing",
     vibeClass: "v2"
+  },
+  // ── Poets ──
+  {
+    text: "Before I was born, the lilac had blossomed. And after I die, it will bloom as before.",
+    author: "Salomėja Nėris",
+    role: "Lithuania's Most Beloved Poetess",
+    emoji: "🌸",
+    vibe: "eternal bloom",
+    vibeClass: "v4"
   }
 ];
 
