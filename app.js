@@ -110,7 +110,7 @@ const quotes = [
   {
     text: "Konkretūs sėkmingų moterų pavyzdžiai yra geriausia priemonė įkvėpti kitas siekti aukštumų.",
     author: "Dalia Grybauskaitė",
-    role: "Lietuvos „Geležinė ledi" ir Karolio Didžiojo premijos laureatė",
+    role: "Lietuvos «Geležinė ledi» ir Karolio Didžiojo premijos laureatė",
     emoji: "⚡",
     vibe: "lead by example",
     vibeClass: "v3"
@@ -133,9 +133,9 @@ const quotes = [
   },
   // ── Scientists & Scholars ──
   {
-    text: "Turime iš naujo sutelkti kolektyvinę atmintį. Vadinamojo „progreso" kelias gesina pačias gyvybės sąlygas Žemėje.",
+    text: "Turime iš naujo sutelkti kolektyvinę atmintį. Vadinamojo «progreso» kelias gesina pačias gyvybės sąlygas Žemėje.",
     author: "Marija Gimbutienė (Marija Gimbutas)",
-    role: "Archeologė — atrado „Senąją Europą" ir Deivės civilizaciją",
+    role: "Archeologė — atrado «Senąją Europą» ir Deivės civilizaciją",
     emoji: "🏺",
     vibe: "ancient wisdom",
     vibeClass: "v2"
@@ -143,7 +143,7 @@ const quotes = [
   {
     text: "Kai atvykau į atogrąžų mišką, niekas nemokėjo ištarti mano vardo. Bet orangutanams buvo vis tiek — ir man taip pat.",
     author: "Birutė Galdikas (Galdikaitė)",
-    role: "Lietuvių kilmės primatologė — viena iš Leakey „Trimates"",
+    role: "Lietuvių kilmės primatologė — viena iš Leakey «Trimates»",
     emoji: "🦧",
     vibe: "science queen",
     vibeClass: "v3"
