@@ -430,31 +430,6 @@ if (!isMobile) {
   });
 }
 
-// ═════════════════════════
-// ── SIDE DECORATIONS ──
-// ═════════════════════════
-function createSideFloaters() {
-  const emojis = ["♥", "✦", "🌸", "💜", "✧", "🌷", "💫", "🦋", "✿", "❀"];
-  const leftEl = document.getElementById("side-left");
-  const rightEl = document.getElementById("side-right");
-
-  const count = isMobile ? 4 : isTablet ? 6 : 8;
-
-  [leftEl, rightEl].forEach(side => {
-    for (let i = 0; i < count; i++) {
-      const floater = document.createElement("span");
-      floater.className = "floater";
-      floater.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-      floater.style.left = Math.random() * 80 + "%";
-      floater.style.animationDelay = (Math.random() * 10) + "s";
-      floater.style.animationDuration = (6 + Math.random() * 6) + "s";
-      side.appendChild(floater);
-    }
-  });
-}
-
-createSideFloaters();
-
 // ══════════════
 // ── INIT ──
 // ══════════════
