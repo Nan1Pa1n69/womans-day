@@ -233,12 +233,20 @@ document.getElementById("shuffle").addEventListener("click", () => {
   burstConfetti();
 });
 
+// ═══════════════════
+// ── MOBILE CHECK ──
+// ═══════════════════
+const isMobile = window.innerWidth <= 700;
+const isTablet = window.innerWidth <= 1024 && !isMobile;
+
 // ══════════════════════════════════
 // ── FLOATING HEARTS BACKGROUND ──
 // ══════════════════════════════════
 const heartsCanvas = document.getElementById("hearts");
 const hCtx = heartsCanvas.getContext("2d");
 let hearts = [];
+const maxHearts = isMobile ? 15 : isTablet ? 25 : 35;
+const heartSpawnRate = isMobile ? 0.04 : 0.08;
 
 function resizeHearts() {
   heartsCanvas.width = window.innerWidth;
@@ -269,10 +277,12 @@ function createHeart() {
     "rgba(244, 114, 182, 0.5)",
     "rgba(168, 85, 247, 0.4)"
   ];
+  const sizeBase = isMobile ? 4 : 5;
+  const sizeRange = isMobile ? 8 : 12;
   return {
     x: Math.random() * heartsCanvas.width,
     y: heartsCanvas.height + 20,
-    size: Math.random() * 12 + 5,
+    size: Math.random() * sizeRange + sizeBase,
     speedY: Math.random() * 0.6 + 0.2,
     speedX: (Math.random() - 0.5) * 0.3,
     wobbleAmp: Math.random() * 30 + 10,
@@ -289,8 +299,7 @@ function createHeart() {
 function animateHearts() {
   hCtx.clearRect(0, 0, heartsCanvas.width, heartsCanvas.height);
 
-  // spawn new hearts
-  if (hearts.length < 35 && Math.random() < 0.08) {
+  if (hearts.length < maxHearts && Math.random() < heartSpawnRate) {
     hearts.push(createHeart());
   }
 
@@ -299,7 +308,6 @@ function animateHearts() {
     h.y -= h.speedY;
     h.x += h.speedX + Math.sin(h.time * h.wobbleSpeed + h.wobbleOffset) * 0.5;
     h.rotation += h.rotSpeed;
-
     drawHeart(hCtx, h.x, h.y, h.size, h.color, h.alpha, h.rotation);
   });
 
@@ -322,13 +330,15 @@ function resizeConfetti() {
 function burstConfetti() {
   const colors = ["#ff6b9d", "#c084fc", "#fbbf24", "#34d399", "#60a5fa", "#f472b6", "#fb923c"];
   const shapes = ["rect", "circle", "heart"];
-  for (let i = 0; i < 100; i++) {
+  const count = isMobile ? 50 : 100;
+  const spread = isMobile ? 150 : 300;
+  for (let i = 0; i < count; i++) {
     particles.push({
-      x: confettiCanvas.width / 2 + (Math.random() - 0.5) * 300,
+      x: confettiCanvas.width / 2 + (Math.random() - 0.5) * spread,
       y: confettiCanvas.height * 0.3,
-      vx: (Math.random() - 0.5) * 16,
+      vx: (Math.random() - 0.5) * (isMobile ? 10 : 16),
       vy: Math.random() * -14 - 4,
-      size: Math.random() * 8 + 3,
+      size: Math.random() * (isMobile ? 6 : 8) + 3,
       color: colors[Math.floor(Math.random() * colors.length)],
       shape: shapes[Math.floor(Math.random() * shapes.length)],
       rotation: Math.random() * 360,
@@ -341,7 +351,8 @@ function burstConfetti() {
 // mini hearts burst on card click
 function burstHeartsAt(x, y) {
   const colors = ["#ff6b9d", "#f472b6", "#c084fc", "#f9a8d4"];
-  for (let i = 0; i < 12; i++) {
+  const count = isMobile ? 6 : 12;
+  for (let i = 0; i < count; i++) {
     particles.push({
       x: x,
       y: y,
@@ -402,20 +413,47 @@ function animateConfetti() {
 // ═══════════════════════════
 // ── SPARKLE CURSOR TRAIL ──
 // ═══════════════════════════
-let sparkleTimer = 0;
-document.addEventListener("mousemove", (e) => {
-  sparkleTimer++;
-  if (sparkleTimer % 3 !== 0) return;
+if (!isMobile) {
+  let sparkleTimer = 0;
+  document.addEventListener("mousemove", (e) => {
+    sparkleTimer++;
+    if (sparkleTimer % 3 !== 0) return;
 
-  const sparkle = document.createElement("div");
-  sparkle.className = "sparkle";
-  sparkle.textContent = ["✦", "✧", "♥", "⋆", "✶"][Math.floor(Math.random() * 5)];
-  sparkle.style.left = (e.clientX + (Math.random() - 0.5) * 20) + "px";
-  sparkle.style.top = (e.clientY + (Math.random() - 0.5) * 20) + "px";
-  sparkle.style.color = ["#ff6b9d", "#c084fc", "#fbbf24", "#f472b6"][Math.floor(Math.random() * 4)];
-  document.body.appendChild(sparkle);
-  setTimeout(() => sparkle.remove(), 800);
-});
+    const sparkle = document.createElement("div");
+    sparkle.className = "sparkle";
+    sparkle.textContent = ["✦", "✧", "♥", "⋆", "✶"][Math.floor(Math.random() * 5)];
+    sparkle.style.left = (e.clientX + (Math.random() - 0.5) * 20) + "px";
+    sparkle.style.top = (e.clientY + (Math.random() - 0.5) * 20) + "px";
+    sparkle.style.color = ["#ff6b9d", "#c084fc", "#fbbf24", "#f472b6"][Math.floor(Math.random() * 4)];
+    document.body.appendChild(sparkle);
+    setTimeout(() => sparkle.remove(), 800);
+  });
+}
+
+// ═════════════════════════
+// ── SIDE DECORATIONS ──
+// ═════════════════════════
+function createSideFloaters() {
+  const emojis = ["♥", "✦", "🌸", "💜", "✧", "🌷", "💫", "🦋", "✿", "❀"];
+  const leftEl = document.getElementById("side-left");
+  const rightEl = document.getElementById("side-right");
+
+  const count = isMobile ? 4 : isTablet ? 6 : 8;
+
+  [leftEl, rightEl].forEach(side => {
+    for (let i = 0; i < count; i++) {
+      const floater = document.createElement("span");
+      floater.className = "floater";
+      floater.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      floater.style.left = Math.random() * 80 + "%";
+      floater.style.animationDelay = (Math.random() * 10) + "s";
+      floater.style.animationDuration = (6 + Math.random() * 6) + "s";
+      side.appendChild(floater);
+    }
+  });
+}
+
+createSideFloaters();
 
 // ══════════════
 // ── INIT ──

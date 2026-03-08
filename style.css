@@ -329,11 +329,165 @@ footer {
   color: var(--muted);
 }
 
+/* ── Side decorations ── */
+.side-deco {
+  position: fixed;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.side-deco.left { left: 0; }
+.side-deco.right { right: 0; }
+
+.side-deco .floater {
+  position: absolute;
+  font-size: 1.4rem;
+  opacity: 0;
+  animation: sideFloat 8s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px rgba(255, 107, 157, 0.4));
+}
+
+@keyframes sideFloat {
+  0% { opacity: 0; transform: translateY(100vh) rotate(0deg) scale(0.5); }
+  10% { opacity: 0.7; }
+  50% { opacity: 0.9; transform: translateY(40vh) rotate(180deg) scale(1); }
+  90% { opacity: 0.5; }
+  100% { opacity: 0; transform: translateY(-10vh) rotate(360deg) scale(0.6); }
+}
+
 /* ── Responsive ── */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .wall {
+    columns: 2;
+    max-width: 800px;
+    padding: 0 1.2rem;
+    column-gap: 1.2rem;
+  }
+
+  .side-deco { width: 40px; }
+  .side-deco .floater { font-size: 1.1rem; }
+
+  body::before {
+    background:
+      radial-gradient(ellipse 400px 400px at 15% 30%, rgba(255, 107, 157, 0.2) 0%, transparent 70%),
+      radial-gradient(ellipse 350px 350px at 85% 15%, rgba(192, 132, 252, 0.2) 0%, transparent 70%),
+      radial-gradient(ellipse 400px 400px at 50% 85%, rgba(249, 168, 212, 0.15) 0%, transparent 70%);
+  }
+
+  body::after {
+    background:
+      radial-gradient(ellipse 300px 300px at 70% 40%, rgba(244, 114, 182, 0.15) 0%, transparent 70%),
+      radial-gradient(ellipse 350px 350px at 20% 60%, rgba(168, 85, 247, 0.12) 0%, transparent 70%);
+  }
+}
+
+/* Mobile */
 @media (max-width: 700px) {
+  header {
+    padding: 2rem 0.8rem 1rem;
+  }
+
+  header h1 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  #shuffle {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.5rem;
+  }
+
   .wall {
     columns: 1;
-    padding: 0 1rem;
+    padding: 0 0.8rem;
+    margin: 1.2rem auto;
   }
-  header { padding-top: 2rem; }
+
+  .card {
+    padding: 1.4rem;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+  }
+
+  .card blockquote {
+    font-size: 1.2rem;
+    line-height: 1.45;
+  }
+
+  .card .emoji-tag {
+    font-size: 1.5rem;
+  }
+
+  .card .author {
+    font-size: 0.8rem;
+  }
+
+  .card .role {
+    font-size: 0.7rem;
+  }
+
+  .card .vibe {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .card.active {
+    transform: scale(1.02);
+  }
+
+  .side-deco { width: 28px; }
+  .side-deco .floater { font-size: 0.9rem; }
+
+  footer {
+    padding: 1.5rem 0.8rem 2rem;
+    font-size: 0.8rem;
+  }
+
+  /* Smaller blobs on mobile */
+  body::before {
+    background:
+      radial-gradient(ellipse 250px 250px at 20% 30%, rgba(255, 107, 157, 0.2) 0%, transparent 70%),
+      radial-gradient(ellipse 200px 200px at 80% 20%, rgba(192, 132, 252, 0.2) 0%, transparent 70%),
+      radial-gradient(ellipse 250px 250px at 50% 80%, rgba(249, 168, 212, 0.15) 0%, transparent 70%);
+  }
+
+  body::after {
+    background:
+      radial-gradient(ellipse 200px 200px at 70% 50%, rgba(244, 114, 182, 0.15) 0%, transparent 70%),
+      radial-gradient(ellipse 200px 200px at 30% 70%, rgba(168, 85, 247, 0.12) 0%, transparent 70%);
+  }
+}
+
+/* Small mobile */
+@media (max-width: 380px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  .card blockquote {
+    font-size: 1.1rem;
+  }
+
+  .side-deco { display: none; }
 }
