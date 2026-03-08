@@ -1,0 +1,211 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #fef1fa;
+  --card1: #fff0f5;
+  --card2: #f0e6ff;
+  --card3: #fff8e1;
+  --card4: #e8faf0;
+  --card5: #ffe8ec;
+  --card6: #e6f0ff;
+  --pop1: #ff6b9d;
+  --pop2: #c084fc;
+  --pop3: #fbbf24;
+  --pop4: #34d399;
+  --text: #2d1b3d;
+  --muted: #8b7a99;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#confetti {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+header, main, footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Header ── */
+header {
+  text-align: center;
+  padding: 2.5rem 1rem 1rem;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  color: var(--text);
+  line-height: 1.1;
+}
+
+header h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--pop1), var(--pop2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
+.shuffle-wrap {
+  margin-top: 1.2rem;
+}
+
+#shuffle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.6rem;
+  border: 2px dashed var(--pop2);
+  border-radius: 50px;
+  background: transparent;
+  color: var(--pop2);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#shuffle:hover {
+  background: var(--pop2);
+  color: white;
+  border-style: solid;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* ── Wall ── */
+.wall {
+  max-width: 1300px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  columns: 3 300px;
+  column-gap: 1.2rem;
+}
+
+/* ── Cards ── */
+.card {
+  break-inside: avoid;
+  border-radius: 20px;
+  padding: 1.8rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card.c1 { background: var(--card1); }
+.card.c2 { background: var(--card2); }
+.card.c3 { background: var(--card3); }
+.card.c4 { background: var(--card4); }
+.card.c5 { background: var(--card5); }
+.card.c6 { background: var(--card6); }
+
+.card:hover {
+  transform: translateY(-4px) rotate(-0.5deg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card.active {
+  transform: scale(1.04) rotate(0.5deg);
+  border-color: var(--pop1);
+  box-shadow: 0 8px 30px rgba(255, 107, 157, 0.2);
+}
+
+.card .emoji-tag {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.card blockquote {
+  font-family: 'Caveat', cursive;
+  font-size: 1.35rem;
+  line-height: 1.45;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.card .author {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.card .role {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+/* sticker-like tag */
+.card .vibe {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.25rem 0.7rem;
+  border-radius: 50px;
+  color: white;
+}
+
+.vibe.v1 { background: var(--pop1); }
+.vibe.v2 { background: var(--pop2); }
+.vibe.v3 { background: var(--pop3); color: var(--text); }
+.vibe.v4 { background: var(--pop4); }
+
+/* ── Entrance ── */
+.card {
+  opacity: 0;
+  transform: translateY(25px) rotate(-1deg);
+  animation: popIn 0.45s ease forwards;
+}
+
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .wall {
+    columns: 1;
+    padding: 0 1rem;
+  }
+}
