@@ -1,176 +1,176 @@
 const quotes = [
   // ── Historical Writers & Feminists ──
   {
-    text: "Nieko į grabą neįsidėsi. — You cannot take anything into the grave. Live fully, give generously.",
+    text: "Nieko į grabą neįsidėsi. Gyvenk pilnai, duok dosniai.",
     author: "Žemaitė (Julija Beniuševičiūtė-Žymantienė)",
-    role: "Writer, Feminist & National Revival Pioneer",
+    role: "Rašytoja, feministė ir tautinio atgimimo pradininkė",
     emoji: "✊",
     vibe: "inner strength",
     vibeClass: "v1"
   },
   {
-    text: "When people have so much to express, no single language can contain it all.",
+    text: "Kai žmonės turi tiek daug ką pasakyti, jokia viena kalba to sutalpinti negali.",
     author: "Sofija Kymantaitė-Čiurlionienė",
-    role: "Writer, Educator & Cultural Activist",
+    role: "Rašytoja, pedagogė ir kultūros veikėja",
     emoji: "🎨",
     vibe: "creative fire",
     vibeClass: "v2"
   },
   {
-    text: "People are lonely like trees. Trees touch each other with leaves and branches, but the trunks always stand apart.",
+    text: "Žmonės vieniši kaip medžiai. Medžiai liečiasi lapais ir šakomis, bet kamienai visada stovi atskirai.",
     author: "Jurga Ivanauskaitė",
-    role: "Writer, Painter & Tibet Activist",
+    role: "Rašytoja, dailininkė ir Tibeto aktyvistė",
     emoji: "🌳",
     vibe: "deep soul",
     vibeClass: "v4"
   },
   {
-    text: "My life is a windstorm, unleashed and unbounded — it sweeps like a falcon over expanses of field!",
+    text: "Mano gyvenimas — tai viesulas, paleistas ir nesuvaldomas — jis šuoliuoja tarsi sakalas virš laukų platybių!",
     author: "Salomėja Nėris (Salomėja Bačinskaitė)",
-    role: "Beloved Lithuanian Poetess",
+    role: "Mylimiausia Lietuvos poetė",
     emoji: "🌪️",
     vibe: "unleashed",
     vibeClass: "v2"
   },
   // ── Independence & Freedom Fighters ──
   {
-    text: "The love of the Motherland led me. From childhood I lived with the idea that I would one day go to war for her freedom.",
+    text: "Mane vedė Tėvynės meilė. Nuo vaikystės gyvenau su mintimi, kad vieną dieną eisiu kovoti už jos laisvę.",
     author: "Emilija Pliaterytė",
-    role: "\"Lithuanian Joan of Arc\" — 1831 Uprising Heroine",
+    role: "\"Lietuvos Žana d'Ark\" — 1831 m. sukilimo didvyrė",
     emoji: "⚔️",
     vibe: "fearless",
     vibeClass: "v1"
   },
   {
-    text: "You are the chief editors! You commit the crimes — we just write them down. We are merely the secretaries.",
+    text: "Jūs esate vyriausieji redaktoriai! Jūs darote nusikaltimus — mes tik juos užrašome. Mes esame tik sekretorės.",
     author: "Nijolė Sadūnaitė",
-    role: "Dissident Nun & Human Rights Defender",
+    role: "Disidentė vienuolė ir žmogaus teisių gynėja",
     emoji: "✝️",
     vibe: "truth teller",
     vibeClass: "v1"
   },
   {
-    text: "The happiest years of my life were spent in prison. You feel God's presence there. For the Church to live, you need martyrs.",
+    text: "Laimingiausi mano gyvenimo metai buvo praleisti kalėjime. Ten jauti Dievo artumą. Kad Bažnyčia gyventų, reikia kankinių.",
     author: "Nijolė Sadūnaitė",
-    role: "Soviet Political Prisoner & Chronicle of the Catholic Church Smuggler",
+    role: "Sovietinė politinė kalinė ir Katalikų Bažnyčios kronikos platintoja",
     emoji: "🕊️",
     vibe: "unbreakable spirit",
     vibeClass: "v4"
   },
   {
-    text: "Death, famine, typhus, lice, scurvy, and cold had wormed their way into our barracks — but they could not reach our spirit.",
+    text: "Mirtis, badas, šiltinė, utėlės, skorbutas ir šaltis buvo įsisukę į mūsų barakus — bet jie negalėjo pasiekti mūsų dvasios.",
     author: "Dalia Grinkevičiūtė",
-    role: "Writer, Physician & Siberian Exile Survivor",
+    role: "Rašytoja, gydytoja ir Sibiro tremtinė",
     emoji: "❄️",
     vibe: "unbreakable",
     vibeClass: "v1"
   },
   // ── Activists & Suffragists ──
   {
-    text: "Voting rights must belong to all — regardless of sex, religion, or nationality. This is not a privilege, it is a right.",
+    text: "Balsavimo teisė turi priklausyti visiems — nepaisant lyties, religijos ar tautybės. Tai ne privilegija, tai teisė.",
     author: "Felicija Bortkevičienė (née Povickaitė)",
-    role: "Publisher, Book Smuggler, Suffragist & First Lithuanian Female Freemason",
+    role: "Leidėja, knygnešė, sufražistė ir pirmoji lietuvė masonė",
     emoji: "📚",
     vibe: "knowledge rebel",
     vibeClass: "v4"
   },
   {
-    text: "A conscious person sees how small we each are in this world — a mere atom of its grandeur — yet that awareness is our greatest power.",
+    text: "Sąmoningas žmogus mato, kokie maži mes esame šiame pasaulyje — tik atomas jo didybėje — tačiau tas suvokimas yra mūsų didžiausia galia.",
     author: "Gabrielė Petkevičaitė-Bitė",
-    role: "Writer, Educator & Women's Rights Pioneer",
+    role: "Rašytoja, pedagogė ir moterų teisių pradininkė",
     emoji: "🐝",
     vibe: "bee power",
     vibeClass: "v2"
   },
   {
-    text: "All my deeds were committed out of love for culture and because I could not coldly observe the suffering of the innocent.",
+    text: "Visi mano darbai buvo padaryti iš meilės kultūrai ir todėl, kad negalėjau šaltai stebėti nekaltųjų kančios.",
     author: "Ona Šimaitė",
-    role: "Librarian, Righteous Among the Nations — Rescued Jews from Vilna Ghetto",
+    role: "Bibliotekininkė, Pasaulio tautų teisuolė — gelbėjo žydus iš Vilniaus geto",
     emoji: "📖",
     vibe: "quiet courage",
     vibeClass: "v4"
   },
   {
-    text: "Every day of your life you must devote yourself to the good of others — by doing, not chatting.",
+    text: "Kiekvieną savo gyvenimo dieną turi atsiduoti kitų labui — darbais, ne kalbomis.",
     author: "Ona Šimaitė",
-    role: "Vilnius University Librarian & Holocaust Rescuer",
+    role: "Vilniaus universiteto bibliotekininkė ir Holokausto gelbėtoja",
     emoji: "🤝",
     vibe: "actions speak",
     vibeClass: "v3"
   },
   // ── Politicians ──
   {
-    text: "Do not be afraid to be yourself, to have your dream, your vision, and to go for it. We can achieve so much if we are sincerely committed.",
+    text: "Nebijok būti savimi, turėti savo svajonę, savo viziją ir eiti jos link. Mes galime tiek daug pasiekti, jei esame nuoširdžiai atsidavę.",
     author: "Dalia Grybauskaitė",
-    role: "First Female President of Lithuania (2009–2019)",
+    role: "Pirmoji Lietuvos prezidentė moteris (2009–2019)",
     emoji: "🇱🇹",
     vibe: "iron lady",
     vibeClass: "v1"
   },
   {
-    text: "Concrete examples of successful women are the best means of empowerment for others to seek the heights.",
+    text: "Konkretūs sėkmingų moterų pavyzdžiai yra geriausia priemonė įkvėpti kitas siekti aukštumų.",
     author: "Dalia Grybauskaitė",
-    role: "Lithuania's \"Iron Lady\" & Charlemagne Prize Laureate",
+    role: "Lietuvos „Geležinė ledi" ir Karolio Didžiojo premijos laureatė",
     emoji: "⚡",
     vibe: "lead by example",
     vibeClass: "v3"
   },
   {
-    text: "We're living a paradox. While our societies are equally balanced, our parliaments are not. It is time to change that.",
+    text: "Gyvename paradokse. Mūsų visuomenės yra tolygios, bet mūsų parlamentai — ne. Laikas tai pakeisti.",
     author: "Ingrida Šimonytė",
-    role: "Prime Minister of Lithuania (2020–2024)",
+    role: "Lietuvos ministrė pirmininkė (2020–2024)",
     emoji: "⚖️",
     vibe: "equality now",
     vibeClass: "v2"
   },
   {
-    text: "When a small nation stands up for its freedom, it shows the world that courage has no size.",
+    text: "Kai maža tauta stoja už savo laisvę, ji parodo pasauliui, kad drąsa neturi dydžio.",
     author: "Kazimira Prunskienė",
-    role: "First Prime Minister of Independent Lithuania (1990–1991)",
+    role: "Pirmoji nepriklausomos Lietuvos ministrė pirmininkė (1990–1991)",
     emoji: "🎶",
     vibe: "freedom voice",
     vibeClass: "v4"
   },
   // ── Scientists & Scholars ──
   {
-    text: "We must refocus our collective memory. The path of so-called 'progress' is extinguishing the very conditions for life on Earth.",
+    text: "Turime iš naujo sutelkti kolektyvinę atmintį. Vadinamojo „progreso" kelias gesina pačias gyvybės sąlygas Žemėje.",
     author: "Marija Gimbutienė (Marija Gimbutas)",
-    role: "Archaeologist — Discovered \"Old Europe\" & the Goddess Civilisation",
+    role: "Archeologė — atrado „Senąją Europą" ir Deivės civilizaciją",
     emoji: "🏺",
     vibe: "ancient wisdom",
     vibeClass: "v2"
   },
   {
-    text: "When I came to the rainforest, nobody could pronounce my name. But the orangutans didn't care — and neither did I.",
+    text: "Kai atvykau į atogrąžų mišką, niekas nemokėjo ištarti mano vardo. Bet orangutanams buvo vis tiek — ir man taip pat.",
     author: "Birutė Galdikas (Galdikaitė)",
-    role: "Lithuanian-Canadian Primatologist — One of Leakey's \"Trimates\"",
+    role: "Lietuvių kilmės primatologė — viena iš Leakey „Trimates"",
     emoji: "🦧",
     vibe: "science queen",
     vibeClass: "v3"
   },
   // ── Athletes ──
   {
-    text: "Psychology plays the biggest role. I learned so much during my break — when I came back, I could approach everything in a completely different way.",
+    text: "Psichologija vaidina didžiausią vaidmenį. Per pertrauką tiek daug išmokau — kai grįžau, galėjau viską vertinti visiškai kitaip.",
     author: "Rūta Meilutytė",
-    role: "Olympic Gold Medallist & 3× World Champion Swimmer",
+    role: "Olimpinė čempionė ir 3× pasaulio čempionė plaukikė",
     emoji: "🥇",
     vibe: "champion mindset",
     vibeClass: "v3"
   },
   // ── Artists & Cultural Figures ──
   {
-    text: "When I came to Germany, I had zero stage experience, zero repertoire. I learned everything from scratch — and I grow with every role, to this day.",
+    text: "Kai atvykau į Vokietiją, neturėjau jokios scenos patirties, jokio repertuaro. Viską išmokau nuo nulio — ir augu su kiekvienu vaidmeniu iki šiol.",
     author: "Violeta Urmana (Urmanavičiūtė)",
-    role: "World-Renowned Opera Singer & UNESCO Artist for Peace",
+    role: "Pasaulinio garso operos solistė ir UNESCO taikos menininkė",
     emoji: "🎭",
     vibe: "never stop growing",
     vibeClass: "v2"
   },
   // ── Poets ──
   {
-    text: "Before I was born, the lilac had blossomed. And after I die, it will bloom as before.",
+    text: "Dar prieš man gimstant, alyvos jau žydėjo. Ir kai mirsiu, jos žydės kaip pirma.",
     author: "Salomėja Nėris",
-    role: "Lithuania's Most Beloved Poetess",
+    role: "Mylimiausia Lietuvos poetė",
     emoji: "🌸",
     vibe: "eternal bloom",
     vibeClass: "v4"
